@@ -1,4 +1,5 @@
 import './App.css';
+import { Card } from './Components/Home/Card';
 import { Header } from './Components/Sheard/Header';
 import { Navbar } from './Components/Sheard/Navbar';
 
@@ -9,7 +10,7 @@ function App() {
     <>
       <main className='font-Onest'>
         <Navbar />
-       
+       <Card />
       </main>
     </>
   );
