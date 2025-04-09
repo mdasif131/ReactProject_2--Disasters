@@ -11,9 +11,9 @@ function App() {
   return (
     <>
       <main className='font-Onest'>
-        {/* <Navbar /> */}
-        {/* <Dashbord /> */}
-        <ChatCypher />
+        <Navbar />
+        <Dashbord />
+
       </main>
     </>
   );

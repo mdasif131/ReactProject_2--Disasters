@@ -12,6 +12,7 @@ export default {
       },
       fontFamily: {
         Onest: ['Onest', 'sans-serif'],
+        Bebas: ['Bebas Neue', 'sans-serif'],
       },
       borderRadius: {
         B_ru: '6px',
