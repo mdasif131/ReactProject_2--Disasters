@@ -9,7 +9,7 @@ function App() {
     <>
       <main className='font-Onest'>
         <Navbar />
-        <Header />
+       
       </main>
     </>
   );

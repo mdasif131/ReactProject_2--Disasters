@@ -17,6 +17,13 @@ export default {
         B_ru: '6px',
         M_ru: '10px',
       },
+      // border: 1px solid #E4E4E7
+      // background: #71717A;
+
+      letterSpacing: {
+        'tight-custom': '-0.12px',
+        'tight-custom2': '-0.26px',
+      },
     },
   },
   plugins: [],

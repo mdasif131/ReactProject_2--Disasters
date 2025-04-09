@@ -26,3 +26,10 @@ export const navItems = [
     link: '#',
   },
 ];
+export const navItemsArray = [
+  'Dashboard',
+  'Incidents',
+  'Locations',
+  'Activities',
+  'Cypher AI',
+];
