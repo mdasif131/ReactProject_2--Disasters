@@ -1,5 +1,5 @@
 import './App.css';
-import { Card } from './Components/Home/Card';
+import { Card } from './Components/HomePage/Card';
 import { Header } from './Components/Sheard/Header';
 import { Navbar } from './Components/Sheard/Navbar';
 
