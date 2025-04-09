@@ -7,7 +7,7 @@ export const Header = ({ activeLabel }) => {
   return (
     <section className="bg-accent1/50">
       <Container>
-        <div className="flex flex-col md:flex-row justify-between items-start px-4 pt-[32px] pb-[10px]">
+        <div className="flex flex-col md:flex-row justify-between items-start px-4 pt-4 md:pt-[32px] pb-[10px]">
           <div className="">
             <p className=" text-accent2 text-xs font-[400] tracking-tight-custom">
               Welcome back
