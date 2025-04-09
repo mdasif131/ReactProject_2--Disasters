@@ -3,6 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      supports: {
+        mobile:'320px'
+      },
       colors: {
         primary: '#F26922',
         secondary: '#3F3F46',
@@ -18,8 +21,11 @@ export default {
         B_ru: '6px',
         M_ru: '10px',
       },
-      // border: 1px solid #E4E4E7
-      // background: #71717A;
+      // box-shadow: 0px 4px 48px 0px #0000000F;
+
+      boxShadow: {
+        chatHover: '0px 4px 48px 0px #0000000F',
+      },
 
       letterSpacing: {
         'tight-custom': '-0.12px',
