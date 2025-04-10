@@ -1,6 +1,26 @@
 import React from 'react'
 import { Blizzard } from '../ReuseComponents/Blizzard';
 import { Tree } from './IconInfo';
+import {
+  DesIcon1,
+  DesIcon2,
+  DesIcon3,
+  DesIcon4,
+  DesIcon5,
+  DesIcon6,
+  DesIcon7,
+  DesIcon8,
+  DesIcon9,
+  DesIcon10,
+  DesIcon11,
+  DesIcon12,
+  DesIcon13,
+  DesIcon14,
+  DesIcon15,
+  DesIcon16,
+  DesIcon17,
+  DesIcon18,
+} from '../Data/IconInfo';
 
 export const navItems = [
   {
@@ -102,4 +122,25 @@ export const GetStartInfo = [
     title: 'Where did the incident occur?',
     des: 'Lorem ipsum dolar sit general sac mascho werho',
   },
+];
+
+export const DescribesInfo = [
+  { icon: <DesIcon1 size={25} />, iconName: 'Avalanche' },
+  { icon: <DesIcon2 />, iconName: 'Biological' },
+  { icon: <DesIcon3 />, iconName: 'Blizzard' },
+  { icon: <DesIcon4 />, iconName: 'Cold/Freezing' },
+  { icon: <DesIcon5 />, iconName: 'Drought' },
+  { icon: <DesIcon6 />, iconName: 'Earthquake' },
+  { icon: <DesIcon7 />, iconName: 'Flooding' },
+  { icon: <DesIcon8 />, iconName: 'Heat Wave' },
+  { icon: <DesIcon9 />, iconName: 'Hail' },
+  { icon: <DesIcon10 />, iconName: 'Lightning' },
+  { icon: <DesIcon11 />, iconName: 'Man Made' },
+  { icon: <DesIcon12 />, iconName: 'Mudslide' },
+  { icon: <DesIcon13 />, iconName: 'Severe Storm' },
+  { icon: <DesIcon14 />, iconName: 'Strong Wind' },
+  { icon: <DesIcon15 />, iconName: 'Tornado' },
+  { icon: <DesIcon16 />, iconName: 'Tsunami' },
+  { icon: <DesIcon17 />, iconName: 'Volcanic Eruption' },
+  { icon: <DesIcon18 />, iconName: 'Wildfire' },
 ];

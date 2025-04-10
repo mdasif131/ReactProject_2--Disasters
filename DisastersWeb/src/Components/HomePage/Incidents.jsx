@@ -1,17 +1,20 @@
-import React from 'react'
-import { Container } from '../ReuseComponents/Container'
-import { Card } from './Card'
-import { GetStart } from './GetStart'
-import { IncidentHeader } from './IncidentHeader'
+import React from 'react';
+import { Container } from '../ReuseComponents/Container';
+import { Card } from './Card';
+import { GetStart } from './GetStart';
+import { IncidentHeader } from './IncidentHeader';
+import { DescribeIncident } from './DescribeIncident';
 
 export const Incidents = () => {
   return (
     <section>
-        <IncidentHeader />
+      <IncidentHeader />
       <Container>
-     {/* <Card /> */}
+        {/* <Card /> */}
         {/* <GetStart  /> */}
+        <DescribeIncident />
+      
       </Container>
     </section>
-  )
-}
+  );
+};

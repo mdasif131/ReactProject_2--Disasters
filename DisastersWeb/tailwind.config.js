@@ -3,8 +3,8 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      supports: {
-        mobile: '320px',
+      screens: {
+        'mobile': '500px'
       },
       colors: {
         primary: '#F26922',
@@ -32,6 +32,7 @@ export default {
       letterSpacing: {
         'tight-custom': '-0.12px',
         'tight-custom2': '-0.26px',
+        'tight-custom3': '-0.24px',
       },
     },
   },
