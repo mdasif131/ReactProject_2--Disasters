@@ -1,17 +1,21 @@
 import React from 'react'
 import { Blizzard } from '../ReuseComponents/Blizzard';
+import { Tree } from './IconInfo';
+
 export const navItems = [
   {
     label: 'Dashboard',
-    link: '#',
+    link: '/',
+
   },
   {
     label: 'Incidents',
-    link: '#',
+    link: '/incident',
+
   },
   {
     label: 'Locations',
-    link: '#',
+    link: '/locations',
   },
   {
     label: 'Activities',
@@ -27,11 +31,14 @@ export const navItems = [
   },
 ];
 export const navItemsArray = [
-  'Dashboard',
-  'Incidents',
-  'Locations',
-  'Activities',
-  'Cypher AI',
+  { label: 'Dashboard', des: ' Welcome back', buttonText: 'Cypher AI' },
+  { label: 'Incidents', des: ' Welcome back', buttonText: '+ New Incident' },
+  {
+    label: 'DR-4699 March 2023 Severe Storms',
+    img: <Tree />,
+    des: 'Incidents - DR-4699 March 2023 Severe Storms ',
+    buttonText: '+ New Location',
+  },
 ];
 
 export const ImageCardInfo = [

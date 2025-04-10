@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       supports: {
-        mobile:'320px'
+        mobile: '320px',
       },
       colors: {
         primary: '#F26922',
@@ -25,6 +25,8 @@ export default {
 
       boxShadow: {
         chatHover: '0px 4px 48px 0px #0000000F',
+        cardshadow:
+          '0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05)',
       },
 
       letterSpacing: {

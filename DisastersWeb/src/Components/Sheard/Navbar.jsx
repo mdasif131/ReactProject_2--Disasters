@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 
 import { Container } from '../ReuseComponents/Container';
-import { navItems } from '../Data/Information';
+import { navItems, navItemsArray } from '../Data/Information';
 import MobileMenu from './MobileMenu';
 import { Header } from './Header';
 import { cn } from '../../Lab/Utilities';
+import { NavLink,Outlet } from 'react-router-dom';
+
 
 export const Navbar = () => {
   const [isMenusOpen, setMenusOpen] = useState(false);
@@ -12,7 +14,7 @@ export const Navbar = () => {
 
   // Header Dynamic
   const [active, setActive] = useState(0);
-  const activeNavitems = navItems[active];
+  const activeHeaderitems = navItemsArray[active];
   return (
     <>
       <nav className="px-2 md:px-8 py-4 bg-accent1/50 border-b ">
@@ -24,7 +26,7 @@ export const Navbar = () => {
 
             <div className="hidden lg:flex justify-center items-center gap-3 xl:gap-[35px] relative">
               {navItems.map(({ label, link }, i) => (
-                <a href={link} key={i}>
+                <NavLink to={link} key={i}>
                   <button
                     onClick={() => setActive(i)}
                     className={`text-accent2 cursor-pointer text-[14px] font-[400]  ${
@@ -33,8 +35,9 @@ export const Navbar = () => {
                   >
                     {label}
                   </button>
-                </a>
+                </NavLink>
               ))}
+             
               {/* nav Line */}
               <div className="absolute bottom-0 top-12 flex gap-6 w-full max-w-[576px]">
                 {Array.from(Array(6).keys()).map(el => (
@@ -82,7 +85,13 @@ export const Navbar = () => {
           )}
         </Container>
       </nav>
-      <Header activeLabel={activeNavitems.label} />
+       <Outlet />
+      <Header
+        activeLabel={activeHeaderitems.label}
+        btntext={activeHeaderitems.buttonText}
+        Des={activeHeaderitems.des}
+        image={activeHeaderitems.img}
+      />
     </>
   );
 };

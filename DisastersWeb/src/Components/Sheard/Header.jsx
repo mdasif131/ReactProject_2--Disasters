@@ -3,18 +3,23 @@ import { Container } from '../ReuseComponents/Container';
 import { Button } from '../ReuseComponents/Re_button';
 
 
-export const Header = ({ activeLabel }) => {
+export const Header = ({ activeLabel, btntext, Des, image }) => {
+
+ 
   return (
     <section className="bg-accent1/50">
       <Container>
         <div className="flex flex-col md:flex-row justify-between items-start px-4 pt-4 md:pt-[32px] pb-[10px]">
           <div className="">
             <p className=" text-accent2 text-xs font-[400] tracking-tight-custom">
-              Welcome back
+              {Des}
             </p>
-            <h1 className="text-[26px] font-bold tracking-tight-custom2">
-              {activeLabel}
-            </h1>
+            <div>
+              <img src={image} alt="" />
+              <h1 className="text-[26px] font-bold tracking-tight-custom2">
+                {activeLabel}
+              </h1>
+            </div>
           </div>
 
           <div>
@@ -35,7 +40,7 @@ export const Header = ({ activeLabel }) => {
                 />
               </div>
 
-              <Button>Cypher AI</Button>
+              <Button>{btntext}</Button>
             </form>
           </div>
         </div>

@@ -1,7 +1,8 @@
 import React from 'react';
 import { navItems } from '../Data/Information';
 import { cn } from '../../Lab/Utilities';
-navItems;
+import { NavLink,Outlet } from 'react-router-dom';
+
 
 const MobileMenu = ({ toggleMenu, setActive, active }) => {
   return (
@@ -29,10 +30,11 @@ const MobileMenu = ({ toggleMenu, setActive, active }) => {
               i === active ? 'text-primary font-bold' : 'text-black/80'
             } hover:text-primary transition-colors duration-300`}
           >
-            <a href={link}>{label}</a>
+            <NavLink to={link}>{label}</NavLink>
           </button>
         ))}
       </div>
+      <Outlet />
     </div>
   );
 };

@@ -21,7 +21,7 @@ export const ChatCypher = () => {
 
       {/* Chat Box */}
       {isOpen && (
-        <div className="w-full max-w-[331px] rounded-[12px] bg-accent3 shadow-lg ">
+        <div className="w-full max-w-[331px] rounded-[12px] bg-accent3 shadow-cardshadow ">
           {/* Header */}
           <div className="bg-primary rounded-t-[12px] p-4 text-white font-bold text-sm">
             Chat with Cypher
