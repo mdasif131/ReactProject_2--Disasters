@@ -85,3 +85,21 @@ export const ImageCardInfo = [
     price: '$1,456,654.00',
   },
 ];
+
+export const GetStartInfo = [
+  {
+    img: '/get1.png',
+    title: 'What type of incident?',
+    des: 'Choose the category that best describes the incident.',
+  },
+  {
+    img: '/get2.png',
+    title: 'Tell us about the incident?',
+    des: 'Let’s connect the dots and see where to start.',
+  },
+  {
+    img: '/get3.png',
+    title: 'Where did the incident occur?',
+    des: 'Lorem ipsum dolar sit general sac mascho werho',
+  },
+];
