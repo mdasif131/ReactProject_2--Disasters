@@ -6,7 +6,7 @@ export const IncidentHeader = () => {
   return (
     <section className="bg-accent1/50">
       <Container className="py-6 sm:py-8 px-6">
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between px-2.5 sm:px-0">
           {/* Left Side */}
           <div className="flex items-start gap-3 sm:items-center">
             <button className="text-xl bg-white size-10 text-accent2 rounded-full font-bold">

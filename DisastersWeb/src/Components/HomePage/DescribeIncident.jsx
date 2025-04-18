@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Container } from '../ReuseComponents/Container'
 import { DescribesInfo } from '../Data/Information';
-
+import { cn } from '../../Lab/Utilities';
 
 export const DescribeIncident = () => {
   const [isactive, setIsactive] = useState(10)
@@ -15,8 +15,10 @@ export const DescribeIncident = () => {
 
           <div className="grid grid-cols-2 sm:grid-cols-3  md:grid-cols-4 items-center justify-center flex-wrap gap-[11px] w-full max-w-[753px] mx-auto ">
             {DescribesInfo.map(({ icon, iconName }, i) => (
-              <div className="border  rounded-B_ru w-full max-w-[180px] h-[69px] flex items-center justify-start pl-5">
-                <p className="text-accent2 text-xs flex justify-center items-center gap-[10px]">
+              <div key={i}
+                onClick={() => setIsactive(i)}
+                className={cn("border  rounded-B_ru w-full max-w-[180px] h-[69px] flex items-center justify-start pl-5", isactive === i && 'bg-primary ')}>
+                <p className={cn("text-accent2 text-xs flex justify-center items-center gap-[10px]", isactive === i && 'text-white')}>
                   <span>{icon}</span> <span>{iconName}</span>
                 </p>
               </div>

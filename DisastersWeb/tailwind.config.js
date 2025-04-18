@@ -33,6 +33,7 @@ export default {
         'tight-custom': '-0.12px',
         'tight-custom2': '-0.26px',
         'tight-custom3': '-0.24px',
+        'tight-custom4': '-1%',
       },
     },
   },
