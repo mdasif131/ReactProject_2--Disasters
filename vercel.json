@@ -1,4 +1,6 @@
 
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+  "source": "/feedback/((?!general).*)",
+  "destination": "/api/feedback/general"
 }
