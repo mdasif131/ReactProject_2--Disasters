@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from '../ReuseComponents/Container';
 import { Button } from '../ReuseComponents/Re_button';
-
+import {Link, Outlet } from 'react-router-dom';
 
 export const Header = ({ activeLabel, btntext, Des, image }) => {
 
@@ -40,9 +40,12 @@ export const Header = ({ activeLabel, btntext, Des, image }) => {
                 />
               </div>
 
-              <Button>{btntext}</Button>
+              <Link to="/getStart">
+                <Button>{btntext} </Button>
+              </Link>
             </form>
           </div>
+      <Outlet />
         </div>
       </Container>
     </section>

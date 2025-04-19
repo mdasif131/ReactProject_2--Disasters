@@ -12,11 +12,11 @@ export const Incidents = () => {
     <section>
       {/* <IncidentHeader /> */}
       <Container>
-        {/* <Card /> */}
+        <Card />
         {/* <GetStart  /> */}
         {/* <DescribeIncident /> */}
         {/* <IncidentForm /> */}
-        <IncidentsMap />
+        {/* <IncidentsMap /> */}
       </Container>
     </section>
   );

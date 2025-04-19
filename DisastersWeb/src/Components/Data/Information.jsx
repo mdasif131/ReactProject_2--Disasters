@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Blizzard } from '../ReuseComponents/Blizzard';
 import { Tree } from './IconInfo';
 import {
@@ -26,12 +26,10 @@ export const navItems = [
   {
     label: 'Dashboard',
     link: '/',
-
   },
   {
     label: 'Incidents',
     link: '/incident',
-
   },
   {
     label: 'Locations',
@@ -61,6 +59,32 @@ export const navItemsArray = [
   },
 ];
 
+export const LocCardInfo = [
+  {
+    img: '/locImage.png',
+    title: 'Whitechapel Rd.',
+    des: 'Tulare County,  Los Angles, CA 23415',
+    price: '$1,456,654.00',
+  },
+  {
+    img: '/locImage2.png',
+    title: 'Whitechapel Rd.',
+    des: 'Tulare County,  Los Angles, CA 23415',
+    price: '$1,456,654.00',
+  },
+  {
+    img: '/locImage3.png',
+    title: 'Whitechapel Rd.',
+    des: 'Tulare County,  Los Angles, CA 23415',
+    price: '$1,456,654.00',
+  },
+  {
+    img: '/locImage4.png',
+    title: 'Whitechapel Rd.',
+    des: 'Tulare County,  Los Angles, CA 23415',
+    price: '$1,456,654.00',
+  },
+];
 export const ImageCardInfo = [
   {
     image: '/imageCard1.svg',
@@ -143,4 +167,33 @@ export const DescribesInfo = [
   { icon: <DesIcon16 />, iconName: 'Tsunami' },
   { icon: <DesIcon17 />, iconName: 'Volcanic Eruption' },
   { icon: <DesIcon18 />, iconName: 'Wildfire' },
+];
+
+export const ActiveInfo = [
+  {
+    img: '/ActDocimg.png',
+    title:'Actvity name',
+    des: 'Location name • 16.12212, -122.1424',
+    price:'$ 1,456,654,00'
+  },
+  {
+    img: '/ActDocimg.png',
+    title:'Actvity name',
+    des: 'Location name • 16.12212, -122.1424',
+    price:'$ 1,456,654,00'
+  },
+];
+export const DocumentInfo = [
+  {
+    img: '/ActDocimg.png',
+    title: 'Document name',
+    des: 'Location name • 16.12212, -122.1424',
+    price: '$ 1,456,654,00',
+  },
+  {
+    img: '/ActDocimg.png',
+    title: 'Document name',
+    des: 'Location name • 16.12212, -122.1424',
+    price: '$ 1,456,654,00',
+  },
 ];
