@@ -1,5 +1,4 @@
 import './App.css';
-import { Activities } from './Components/HomePage/Activites';
 
 import { Dashbord } from './Components/HomePage/Dashbord';
 import { DescribeIncident } from './Components/HomePage/DescribeIncident';
@@ -27,7 +26,6 @@ function App() {
             <Route path="/getstart" element={<DescribeIncident />} />
             <Route path="/locations" element={<Locations />} />
           </Routes>
-          {/* <Route path="/activites" element={<Activities />} /> */}
         </main>
       </BrowserRouter>
     </>
