@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container } from '../ReuseComponents/Container';
 import { Button } from '../ReuseComponents/Re_button';
-import {Link, Outlet } from 'react-router-dom';
+import {NavLink, Outlet } from 'react-router-dom';
 
-export const Header = ({ activeLabel, btntext, Des, image }) => {
 
- 
+export const Header = ({ activeLabel, btntext, Des, image, Link }) => {
+
   return (
     <section className="bg-accent1/50">
       <Container>
@@ -40,12 +40,13 @@ export const Header = ({ activeLabel, btntext, Des, image }) => {
                 />
               </div>
 
-              <Link to="/getStart">
-                <Button>{btntext} </Button>
-              </Link>
+              <Button onclick={()=> setHidden(false)}>
+                <NavLink to={Link}>{btntext} </NavLink>{' '}
+              </Button>
+            
             </form>
           </div>
-      <Outlet />
+          <Outlet />
         </div>
       </Container>
     </section>

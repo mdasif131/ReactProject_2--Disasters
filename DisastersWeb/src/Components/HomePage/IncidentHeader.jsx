@@ -1,9 +1,11 @@
 import React from 'react';
 import { Container } from '../ReuseComponents/Container';
 import { Button } from '../ReuseComponents/Re_button';
+import { NavLink } from 'react-router';
 
-export const IncidentHeader = () => {
+export const IncidentHeader = ({Next}) => {
   return (
+    <section>
     <section className="bg-accent1/50">
       <Container className="py-6 sm:py-8 px-6">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between px-2.5 sm:px-0">
@@ -37,11 +39,13 @@ export const IncidentHeader = () => {
               Back
             </Button>
             <Button className="bg-primary text-white w-full sm:w-[149px] h-[42px]">
-              Next step
+             <NavLink to={'/nextStep'}>Next Step</NavLink>
             </Button>
           </div>
         </div>
       </Container>
+    </section>
+
     </section>
   );
 };

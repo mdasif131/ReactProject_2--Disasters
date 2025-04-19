@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from '../ReuseComponents/Container';
 import { ActiveInfo, LocCardInfo, DocumentInfo } from '../Data/Information';
+import { Activities } from './Activites';
 
 export const Locations = () => {
   return (
@@ -67,7 +68,7 @@ export const Locations = () => {
             ))}
           </div>
 
-          <div className="py-10 space-y-[15px] border-b">
+          {/* <div className="py-10 space-y-[15px] border-b">
             <div className="flex justify-between items-center">
               <h2 className="font-bold text-[14px] leading-[22px]">
                 Activities
@@ -96,7 +97,8 @@ export const Locations = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
+          <Activities />
           <div className="py-10 space-y-[15px] ">
             <div className="flex justify-between items-center">
               <h2 className="font-bold text-[14px] leading-[22px]">

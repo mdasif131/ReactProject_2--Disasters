@@ -5,16 +5,17 @@ import { navItems, navItemsArray } from '../Data/Information';
 import MobileMenu from './MobileMenu';
 import { Header } from './Header';
 import { cn } from '../../Lab/Utilities';
-import { NavLink,Outlet } from 'react-router-dom';
 
+import { NavLink, Outlet, useLocation } from 'react-router-dom';
 
 export const Navbar = () => {
   const [isMenusOpen, setMenusOpen] = useState(false);
   const toggleMenu = () => setMenusOpen(prv => !prv);
-
   // Header Dynamic
   const [active, setActive] = useState(0);
   const activeHeaderitems = navItemsArray[active];
+
+   const location = useLocation();
   return (
     <>
       <nav className="px-2 md:px-8 py-4 bg-accent1/50 border-b ">
@@ -37,7 +38,7 @@ export const Navbar = () => {
                   </button>
                 </NavLink>
               ))}
-             
+
               {/* nav Line */}
               <div className="absolute bottom-0 top-12 flex gap-6 w-full max-w-[576px]">
                 {Array.from(Array(6).keys()).map(el => (
@@ -85,13 +86,20 @@ export const Navbar = () => {
           )}
         </Container>
       </nav>
-       <Outlet />
-      <Header
-        activeLabel={activeHeaderitems.label}
-        btntext={activeHeaderitems.buttonText}
-        Des={activeHeaderitems.des}
-        image={activeHeaderitems.img}
-      />
+      <Outlet />
+      {!['/getstart', '/newIncident', '/nextStep'].includes(
+        location.pathname
+      ) && (
+        <Header
+          Link={activeHeaderitems.link}
+          activeLabel={activeHeaderitems.label}
+          btntext={activeHeaderitems.buttonText}
+          Des={activeHeaderitems.des}
+          image={activeHeaderitems.img}
+        />
+      )}
     </>
   );
 };
+
+// getstart;

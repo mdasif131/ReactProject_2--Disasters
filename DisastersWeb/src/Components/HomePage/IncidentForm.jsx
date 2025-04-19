@@ -1,9 +1,12 @@
 import React from 'react';
 import { Container } from '../ReuseComponents/Container';
+import { IncidentHeader } from './IncidentHeader';
+import { IncidentsMap } from './IncidentsMap';
 
 export const IncidentForm = () => {
   return (
     <>
+      <IncidentHeader />
       <Container className="my-10 px-6">
         <form className="w-full ">
           <div className="w-full max-w-[752px] mx-auto space-y-[25px]">
@@ -39,6 +42,8 @@ export const IncidentForm = () => {
           </div>
         </form>
       </Container>
+
+      <IncidentsMap />
     </>
   );
 };

@@ -37,7 +37,7 @@ export const navItems = [
   },
   {
     label: 'Activities',
-    link: '#',
+    link: '/activites',
   },
   {
     label: 'Documents ',
@@ -49,12 +49,23 @@ export const navItems = [
   },
 ];
 export const navItemsArray = [
-  { label: 'Dashboard', des: ' Welcome back', buttonText: 'Cypher AI' },
-  { label: 'Incidents', des: ' Welcome back', buttonText: '+ New Incident' },
+  {
+    label: 'Dashboard',
+    des: ' Welcome back',
+    link: '',
+    buttonText: 'Cypher AI',
+  },
+  {
+    label: 'Incidents',
+    des: ' Welcome back',
+    link: '/newIncident',
+    buttonText: '+ New Incident',
+  },
   {
     label: 'DR-4699 March 2023 Severe Storms',
     img: <Tree />,
     des: 'Incidents - DR-4699 March 2023 Severe Storms ',
+    link: '',
     buttonText: '+ New Location',
   },
 ];

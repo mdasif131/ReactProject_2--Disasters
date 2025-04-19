@@ -2,10 +2,13 @@ import React, { useState } from 'react'
 import { Container } from '../ReuseComponents/Container'
 import { DescribesInfo } from '../Data/Information';
 import { cn } from '../../Lab/Utilities';
-
+import { IncidentHeader } from './IncidentHeader';
+import { NavLink, Outlet } from 'react-router-dom';
 export const DescribeIncident = () => {
   const [isactive, setIsactive] = useState(10)
   return (
+    <section>
+      <IncidentHeader />
     <section className="py-10 sm:px-14 mobile:px-20">
       <Container>
         <div className='space-y-[25px]'>
@@ -26,6 +29,8 @@ export const DescribeIncident = () => {
           </div>
         </div>
       </Container>
-    </section>
+      </section>
+      <Outlet />
+     </section>
   );
 }
